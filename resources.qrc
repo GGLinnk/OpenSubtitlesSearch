@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="opensubtitles">ico/animals-goat.png</file>
+        <file alias="voir">ico/detail.png</file>
+        <file alias="arrow_up">ico/go-up-7.png</file>
+        <file alias="arrow_down">ico/go-down-7.png</file>
+        <file alias="remove">ico/delete.png</file>
+        <file alias="download">ico/download.png</file>
+        <file>ico/exit.png</file>
+        <file alias="settings">ico/configure.png</file>
+        <file alias="lien">ico/link.png</file>
+        <file alias="recherche">ico/recherche.png</file>
+        <file>ico/opensubico.png</file>
+        <file alias="apropos">ico/apropos.png</file>
+        <file alias="lierVideo">ico/flag-green.png</file>
+        <file alias="comment">ico/comment.png</file>
+    </qresource>
+    <qresource prefix="/translations">
+        <file>translations/OpenSubtitlesSearch_fr.qm</file>
+    </qresource>
+</RCC>

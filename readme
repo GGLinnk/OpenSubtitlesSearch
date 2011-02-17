@@ -1,0 +1,18 @@
+To compile and execute source code, you'll need these headers / libs :
+	- QT (I suppose at least 4.5, done with 4.6 and 4.7)
+	- zlib (win32 is included)
+	- icu (done with 4.4 - wi32 is included (.h and .dll)
+
+----------------------------------------------------------------
+
+How-to compile:
+
+cd $PROJECT_DIR
+lrelease OpenSubtitlesSearch.pro
+qmake
+make
+
+----------------------------------------------------------------
+
+you can also compile without icu (you will not be able to convert subtitles encoding then) by
+removing the line DEFINES += USE_ICU in the .pro file before compiling.
