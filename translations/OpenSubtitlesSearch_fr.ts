@@ -45,17 +45,17 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>AddCommentDialog</name>
     <message>
-        <location filename="../src/addcommentdialog.ui" line="14"/>
+        <location filename="../ui/addcommentdialog.ui" line="14"/>
         <source>Comment a subtitle</source>
         <translation>Commenter un sous titre</translation>
     </message>
     <message>
-        <location filename="../src/addcommentdialog.ui" line="33"/>
+        <location filename="../ui/addcommentdialog.ui" line="33"/>
         <source>Comment :</source>
         <translation>Commentaire :</translation>
     </message>
     <message>
-        <location filename="../src/addcommentdialog.ui" line="50"/>
+        <location filename="../ui/addcommentdialog.ui" line="50"/>
         <source>Note this subtitle as bad</source>
         <translation>Noter ce sous titre mauvais</translation>
     </message>
@@ -121,12 +121,12 @@ p, li { white-space: pre-wrap; }
 </translation>
     </message>
     <message>
-        <location filename="../src/gestionconnexion.cpp" line="148"/>
+        <location filename="../src/gestionconnexion.cpp" line="149"/>
         <source>Download subtitles</source>
         <translation>Télécharger des sous-titres</translation>
     </message>
     <message>
-        <location filename="../src/gestionconnexion.cpp" line="149"/>
+        <location filename="../src/gestionconnexion.cpp" line="150"/>
         <source>Download subtitles near movie file ?
 Otherwise, it will be downloaded in %1.</source>
         <translation>Télécharger à coté du fichier vidéo ?
@@ -154,16 +154,22 @@ Sinon ce sera téléchargé dans le dossier %1.</translation>
     </message>
     <message>
         <location filename="../src/gestionconnexion.cpp" line="206"/>
-        <source>You have to be logged to OpenSubtitles server with an account(login / pass).</source>
-        <translation>Il faut être identifié avec un couple (login / passwd) provenant d&apos;OpenSubtitles.</translation>
+        <source>You have to be logged to OpenSubtitles server with an account(login / pass).
+Please register on http://www.opensubtitles.org then fill your credentials in the properties dialog.</source>
+        <translation>Il faut être identifié avec un couple (login / passwd) provenant d&apos;OpenSubtitles.
+Merci de vous enregistrer sur http://www.opensubtitles.org puis de remplir les information dans la boite de dialogue de propriétés.</translation>
     </message>
     <message>
-        <location filename="../src/gestionconnexion.cpp" line="211"/>
+        <source>You have to be logged to OpenSubtitles server with an account(login / pass).</source>
+        <translation type="obsolete">Il faut être identifié avec un couple (login / passwd) provenant d&apos;OpenSubtitles.</translation>
+    </message>
+    <message>
+        <location filename="../src/gestionconnexion.cpp" line="212"/>
         <source>Comment sended</source>
         <translation>Commentaire envoyé</translation>
     </message>
     <message>
-        <location filename="../src/gestionconnexion.cpp" line="211"/>
+        <location filename="../src/gestionconnexion.cpp" line="212"/>
         <source>The comment has been send and will be available in a few for other users.</source>
         <translation>Le commentaire a été envoyé et sera accessible d&apos;ici peu aux autres utilisateurs.</translation>
     </message>
@@ -222,7 +228,7 @@ Sinon ce sera téléchargé dans le dossier %1.</translation>
     </message>
     <message>
         <location filename="../ui/mainwindow.ui" line="231"/>
-        <location filename="../src/mainwindow.cpp" line="167"/>
+        <location filename="../src/mainwindow.cpp" line="190"/>
         <source>Quit</source>
         <translation>Quitter</translation>
     </message>
@@ -330,55 +336,55 @@ Sinon ce sera téléchargé dans le dossier %1.</translation>
         <translation>Vues</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="106"/>
-        <location filename="../src/mainwindow.cpp" line="260"/>
+        <location filename="../src/mainwindow.cpp" line="130"/>
+        <location filename="../src/mainwindow.cpp" line="284"/>
         <source>Looking for subtitles</source>
         <translation>Recherche de sous titre</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="115"/>
+        <location filename="../src/mainwindow.cpp" line="139"/>
         <source>Sutitles loaded.</source>
         <translation>Liste de sous titres reçue.</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="126"/>
+        <location filename="../src/mainwindow.cpp" line="149"/>
         <source> - connected</source>
         <translation> - connecté</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="142"/>
+        <location filename="../src/mainwindow.cpp" line="165"/>
         <source>Nothing to download.</source>
         <translation>Rien à télécharger.</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="146"/>
+        <location filename="../src/mainwindow.cpp" line="169"/>
         <source>Downloading subtitles</source>
         <translation>Téléchargement de sous titres</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="168"/>
+        <location filename="../src/mainwindow.cpp" line="191"/>
         <source>The application is not diconnected from server.
 Diconnect anyway ?</source>
         <translation>L&apos;application n&apos;est pas déconnectée du serveur.
 Quitter tout de même ?</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="210"/>
+        <location filename="../src/mainwindow.cpp" line="232"/>
         <source>Unable to associate the selected subtitles</source>
         <translation>Impossible d&apos;associer la sélection de sous titres</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="236"/>
+        <location filename="../src/mainwindow.cpp" line="258"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="236"/>
+        <location filename="../src/mainwindow.cpp" line="258"/>
         <source>The application is not connected to opensubtitles server.</source>
         <translation>L&apos;application n&apos;est pas connectée au serveur d&apos;opensubtitles.</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="270"/>
+        <location filename="../src/mainwindow.cpp" line="295"/>
         <source>Sending comment for subtitle </source>
         <translation>Envoi de commentaire pour le sous titre</translation>
     </message>
@@ -674,13 +680,43 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../ui/searchdialog.ui" line="74"/>
+        <source>french</source>
+        <translation>français</translation>
+    </message>
+    <message>
+        <location filename="../ui/searchdialog.ui" line="77"/>
         <source>fre</source>
         <translation>fra</translation>
     </message>
     <message>
-        <location filename="../ui/searchdialog.ui" line="81"/>
+        <location filename="../ui/searchdialog.ui" line="84"/>
+        <source>english</source>
+        <translation>anglais</translation>
+    </message>
+    <message>
+        <location filename="../ui/searchdialog.ui" line="87"/>
         <source>eng</source>
         <translation>ang</translation>
+    </message>
+    <message>
+        <location filename="../ui/searchdialog.ui" line="94"/>
+        <source>spanish</source>
+        <translation>espagnol</translation>
+    </message>
+    <message>
+        <location filename="../ui/searchdialog.ui" line="97"/>
+        <source>spa</source>
+        <translation>esp</translation>
+    </message>
+    <message>
+        <location filename="../ui/searchdialog.ui" line="104"/>
+        <source>german</source>
+        <translation>allemand</translation>
+    </message>
+    <message>
+        <location filename="../ui/searchdialog.ui" line="107"/>
+        <source>ger</source>
+        <translation>all</translation>
     </message>
     <message>
         <location filename="../src/searchdialog.cpp" line="11"/>
@@ -787,12 +823,12 @@ p, li { white-space: pre-wrap; }
         <translation>Le nom du film a été mis à jour.</translation>
     </message>
     <message>
-        <location filename="../src/updatemoviehashdialog.cpp" line="104"/>
+        <location filename="../src/updatemoviehashdialog.cpp" line="105"/>
         <source>Transaction error.</source>
         <translation>Erreur de transaction.</translation>
     </message>
     <message>
-        <location filename="../src/updatemoviehashdialog.cpp" line="127"/>
+        <location filename="../src/updatemoviehashdialog.cpp" line="128"/>
         <source>Work in progress...
 Stop it ?</source>
         <translation>Envoi en cours...

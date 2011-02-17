@@ -45,7 +45,7 @@ QVariant Settings::value(const char *key) {
 
 QVariant Settings::defaut(const char * key) {
     if (key == MWIN_SIZE) return QSize(800, 600);
-    if (key == SUBS_COLS) return QStringList() << "MovieName" << "LanguageName";
+    if (key == SUBS_COLS) return QStringList() << "MovieName" << "LanguageName" << "SubFileName";
     if (key == USERAGENT) return "OpenSubtitlesSearch 1.0";
     if (key == SUBS_DOWNLOADDIR) return QDir::homePath();
     if (key == SUBS_DOWNLOADMODE) return 0;

@@ -203,7 +203,8 @@ void GestionConnexion::subtitlesDownloaded(const QHash<QString, QByteArray> &has
 
 bool GestionConnexion::tryIsLogged() {
     bool res = isLogged();
-    if (! res) QMessageBox::information(win(), trUtf8("Authorization error"), trUtf8("You have to be logged to OpenSubtitles server with an account(login / pass)."));
+    if (! res) QMessageBox::information(win(), trUtf8("Authorization error"), trUtf8("You have to be logged to OpenSubtitles server with an account(login / pass).\n"
+                                                                                     "Please register on http://www.opensubtitles.org then fill your credentials in the properties dialog."));
     return res;
 }
 
