@@ -16,7 +16,6 @@
 #include "OpenSubtitlesRPCClient.h"
 #include "OpenSubtitlesHelper.h"
 #include <QFileInfo>
-#include <QDebug>
 
 void OpenSubtitlesRPCClient::emitResponse(QNetworkReply* reply, REQUEST_TYPE rtype, const QMap<QString, QVariant> &ans) {
     switch (rtype) {
@@ -160,7 +159,6 @@ QNetworkReply * OpenSubtitlesRPCClient::tryUploadSubtitles(const QList<QVariant>
     QMap<QString, QVariant> cdsMaps;
     for (int i = 0; i < cds.count(); i++) {
         cdsMaps.insert(QString("cd%1").arg(i + 1), cds.at(i));
-        qDebug() << cds.at(i);
     }
     args << m_sessionId << QVariant(cdsMaps);
     return call("TryUploadSubtitles", args, TRY_UPLOAD_SUBTITLES);

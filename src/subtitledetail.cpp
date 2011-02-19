@@ -18,7 +18,6 @@
 #include "columnssubtitleslistmodel.h"
 #include <QMenu>
 #include <QDateTime>
-#include <QDebug>
 
 SubtitleDetail::SubtitleDetail(QWidget *parent) :
     QPlainTextEdit(parent),

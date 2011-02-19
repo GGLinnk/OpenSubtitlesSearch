@@ -17,7 +17,6 @@
 #include "ui_updatemoviehashdialog.h"
 #include "updatemoviehashform.h"
 #include "mainwindow.h"
-#include <QDebug>
 #include <QRegExpValidator>
 #include <QPushButton>
 #include <QMessageBox>

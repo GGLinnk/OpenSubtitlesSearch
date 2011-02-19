@@ -16,7 +16,6 @@
 #include "icu_charset.h"
 #include <unicode/ucnv.h>
 #include <unicode/ucsdet.h>
-#include <QDebug>
 
 QStringList availablesCharset() {
     QStringList lst;

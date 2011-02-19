@@ -22,7 +22,6 @@
 #include <QNetworkReply>
 #include <QDir>
 #include <QLineEdit>
-#include <QDebug>
 #include <QMessageBox>
 #include "networkreplydownloaddelegate.h"
 #include "networkreplydownloadtablemodel.h"

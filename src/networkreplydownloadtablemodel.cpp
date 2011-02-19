@@ -16,7 +16,6 @@
 #include "networkreplydownloadtablemodel.h"
 #include <QNetworkReply>
 #include <QTimer>
-#include <QDebug>
 
 NetworkReplyDownloadTableModel::NetworkReplyDownloadTableModel(QObject *parent) :
     QAbstractTableModel(parent), m_deleteAfter(1500)

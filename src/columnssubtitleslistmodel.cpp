@@ -14,7 +14,6 @@
 */
 
 #include "columnssubtitleslistmodel.h"
-#include <QDebug>
 
 QStringList ColumnsSubtitlesListModel::ALL_COLUMNS
         = QStringList()

@@ -14,7 +14,6 @@
 */
 
 #include "subtitleslistmodel.h"
-#include <QDebug>
 
 SubtitlesListModel::SubtitlesListModel(QObject *parent) :
     QAbstractTableModel(parent)

@@ -158,7 +158,6 @@ void GestionConnexion::subtitlesDownloaded(const QHash<QString, QByteArray> &has
                                                           PropertiesDialog::BASE_DIR : PropertiesDialog::NEAR_MOVIEFILE; break;
     default: downloadMode = PropertiesDialog::BASE_DIR; break;
     }
-    qDebug("%d", downloadMode);
 
     QHash<QString, QByteArray>::const_iterator i;
     for (i = hash.constBegin(); i != hash.constEnd(); ++i) {
@@ -176,7 +175,6 @@ void GestionConnexion::subtitlesDownloaded(const QHash<QString, QByteArray> &has
         } else {
             fname = downloadPath.absoluteFilePath(dataSub.value("SubFileName").toString());
         }
-    qDebug("%s", fname.toAscii().data());
 
 #ifdef USE_ICU
         if (! m_reencode.isEmpty()) {
