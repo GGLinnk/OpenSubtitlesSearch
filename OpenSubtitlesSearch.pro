@@ -26,7 +26,8 @@ SOURCES += src/main.cpp \
     src/updatemoviehashdialog.cpp \
     src/updatemoviehashform.cpp \
     src/searchdialog.cpp \
-    src/addcommentdialog.cpp
+    src/addcommentdialog.cpp \
+    src/generated/oss_langs.cpp
 HEADERS += src/mainwindow.h \
     src/subtitleslistmodel.h \
     src/columnssubtitleslistmodel.h \
@@ -44,7 +45,8 @@ HEADERS += src/mainwindow.h \
     src/updatemoviehashdialog.h \
     src/updatemoviehashform.h \
     src/searchdialog.h \
-    src/addcommentdialog.h
+    src/addcommentdialog.h \
+    src/generated/oss_langs.h
 FORMS += ui/mainwindow.ui \
     ui/propertiesdialog.ui \
     ui/aproposdialog.ui \

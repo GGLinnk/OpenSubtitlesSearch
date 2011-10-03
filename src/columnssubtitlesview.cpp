@@ -14,8 +14,9 @@
 */
 
 #include "columnssubtitlesview.h"
+#include "columnssubtitleslistmodel.h"
 #include <QContextMenuEvent>
-
+#include <QDebug>
 ColumnsSubtitlesView::ColumnsSubtitlesView(QWidget *parent) :
     QTableView(parent),
     m_ctxMenu(NULL)
@@ -35,5 +36,16 @@ void ColumnsSubtitlesView::contextMenuEvent(QContextMenuEvent *e) {
     if (index.isValid()) {
         setCurrentIndex(index);
         m_ctxMenu->exec(e->globalPos());
+    }
+}
+
+void ColumnsSubtitlesView::dropEvent(QDropEvent *event) {
+    if (event->proposedAction() == Qt::MoveAction && event->source()) {
+        ColumnsSubtitlesListModel * m = (ColumnsSubtitlesListModel *) model();
+        QModelIndexList lst = selectionModel()->selectedIndexes();
+        if (lst.size() == 1) {
+            QModelIndex index = indexAt(event->pos());
+            m->moveRow(lst.first().row(), index.row());
+        }
     }
 }

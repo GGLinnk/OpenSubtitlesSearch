@@ -42,6 +42,7 @@ public:
     static const char * SHOWDOWNLOADSONCEDONE;
     static const char * SUBDETAIL_NORMAL;
     static const char * SUBDETAIL_AUTOCOMMENT;
+    static const char * SEARCH_DIALOG_SIZE;
 signals:
 
 public slots:

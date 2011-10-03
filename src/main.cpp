@@ -18,6 +18,8 @@
 #include <QLibraryInfo>
 #include "mainwindow.h"
 
+extern QMap<QString, QString> OSS_LANGS;
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);

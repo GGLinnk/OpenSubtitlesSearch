@@ -2,6 +2,8 @@
 #include "ui_searchdialog.h"
 #include "client/OpenSubtitlesRPCClient.h"
 #include "settings.h"
+#include "generated/oss_langs.h"
+#include <QGridLayout>
 
 SearchDialog::SearchDialog(QWidget *parent) :
     QDialog(parent),
@@ -32,6 +34,22 @@ SearchDialog::SearchDialog(QWidget *parent) :
     connect(ui->comboBox, SIGNAL(currentIndexChanged(int)), ui->stackWidget, SLOT(setCurrentIndex(int)));
 
     ((SearchWidget*) ui->stackWidget->currentWidget())->setFocus();
+    // building langs in layout
+    OssLangs * langs = OssLangs::instance();
+    int cols = 4, i = 0;
+    QMapIterator<QString, QString> itlang((QMap<QString, QString>) *langs);
+
+    QGridLayout * glayout = new QGridLayout();
+    while (itlang.hasNext()) {
+        itlang.next();
+        QCheckBox * cb = new QCheckBox(itlang.value());
+        cb->setObjectName(itlang.key());
+        glayout->addWidget(cb, i/cols, i%cols);
+        i++;
+    }
+    ui->widgetLangs->setLayout(glayout);
+    ui->widgetLangs->show();
+
 }
 
 SearchDialog::~SearchDialog()

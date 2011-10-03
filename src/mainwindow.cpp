@@ -45,7 +45,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QMenu * viewMenu = createPopupMenu();
     viewMenu->setTitle(trUtf8("Views"));
     viewMenu->setParent(this);
-    ui->menuBar->addMenu(viewMenu);
+    ui->menuBar->insertMenu(ui->menuAide->menuAction(), viewMenu);
 
     setAcceptDrops(true);
     // init gestion connexion
@@ -78,6 +78,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     restoreState(settings.value(Settings::MWIN_STATE).toByteArray());
     resize(settings.value(Settings::MWIN_SIZE).toSize());
+    m_searchDialogSize = settings.value(Settings::SEARCH_DIALOG_SIZE).toSize();
     reloadProperties(&settings);
     resizeSubtitlesList();
 
@@ -112,6 +113,7 @@ MainWindow::~MainWindow()
 #ifdef USE_ICU
     settings.setValue(Settings::SUBS_REENCODE, m_gestionConnexion.reencode());
 #endif
+    settings.setValue(Settings::SEARCH_DIALOG_SIZE, m_searchDialogSize);
     delete ui;
 }
 
@@ -268,6 +270,7 @@ void MainWindow::dropEvent(QDropEvent *event) {
 
 void MainWindow::showSearchDialog(SearchDialog::MODE m, const QString & text) {
     SearchDialog d(this);
+    d.resize(m_searchDialogSize);
     d.setSelectedLangs(m_gestionConnexion.searchLangs());
     if (m != SearchDialog::NONE) d.setMode(m);
     d.setText(text);
@@ -283,6 +286,7 @@ void MainWindow::showSearchDialog(SearchDialog::MODE m, const QString & text) {
         followNetworkReply(client()->searchSubtitles(args), trUtf8("Looking for subtitles"));
         m_gestionConnexion.setSearchLangs(langs);
     }
+    m_searchDialogSize = d.size();
 }
 
 void MainWindow::showAddComment() {

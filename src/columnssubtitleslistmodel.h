@@ -37,12 +37,14 @@ public:
     Qt::ItemFlags flags ( const QModelIndex & index ) const;
     QVariant data ( const QModelIndex & index, int role = Qt::DisplayRole ) const;
     bool setData ( const QModelIndex & index, const QVariant & value, int role = Qt::EditRole );
+    Qt::DropActions supportedDropActions() const;
 
     QStringList checkedColumns();
     void setCheckedColumns(const QStringList & cols);
 
     bool moveRowDown(int rowSrc);
     bool moveRowUp(int rowSrc);
+    bool moveRow(int rowSrc, int rowDest);
 signals:
 
 public slots:

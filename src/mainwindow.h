@@ -76,6 +76,7 @@ private:
     OpenSubtitlesRPCClient * m_client;
     GestionConnexion m_gestionConnexion;
     NetworkReplyDownloadTableModel * m_networkReplyModel;
+    QSize m_searchDialogSize;
 
     friend class GestionConnexion;
 };

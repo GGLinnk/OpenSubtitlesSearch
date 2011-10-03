@@ -71,7 +71,12 @@ int ColumnsSubtitlesListModel::columnCount ( const QModelIndex & ) const {
 }
 
 Qt::ItemFlags ColumnsSubtitlesListModel::flags ( const QModelIndex & ) const {
-    return Qt::ItemIsSelectable | Qt::ItemIsEnabled | Qt::ItemIsUserCheckable;
+    return Qt::ItemIsSelectable | Qt::ItemIsEnabled | Qt::ItemIsUserCheckable |
+            Qt::ItemIsDragEnabled | Qt::ItemIsDropEnabled;
+}
+
+Qt::DropActions ColumnsSubtitlesListModel::supportedDropActions() const {
+    return Qt::MoveAction;
 }
 
 QVariant ColumnsSubtitlesListModel::data ( const QModelIndex & index, int role ) const {
@@ -160,3 +165,16 @@ bool ColumnsSubtitlesListModel::moveRowUp(int rowSrc) {
     }
     return false;
 }
+
+bool ColumnsSubtitlesListModel::moveRow(int rowSrc, int rowDest) {
+    QModelIndex parent = QModelIndex();
+    if (beginMoveRows(parent, rowSrc, rowSrc, parent, rowDest)) {
+        QPair<QString, bool> b = m_colonnes.takeAt(rowSrc);
+        m_colonnes.insert(rowDest, b);
+        endMoveRows();
+        return true;
+    }
+    return false;
+}
+
+

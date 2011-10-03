@@ -33,6 +33,7 @@ const char * Settings::AUTOCONNECT = "autoconnect";
 const char * Settings::SHOWDOWNLOADSONCEDONE = "showDownloadsOnceDone";
 const char * Settings::SUBDETAIL_NORMAL = "subDetail/normal";
 const char * Settings::SUBDETAIL_AUTOCOMMENT = "subDetail/autoComment";
+const char * Settings::SEARCH_DIALOG_SIZE = "searchDialog/size";
 
 Settings::Settings(QObject *parent) :
     QSettings("Parcouss Apps", "OpenSubtitlesSearch", parent)
@@ -61,5 +62,6 @@ QVariant Settings::defaut(const char * key) {
 #ifdef USE_ICU
     if (key == SUBS_REENCODE) return "";
 #endif
+    if (key == SEARCH_DIALOG_SIZE) return QSize(640, 480);
     return QVariant();
 }

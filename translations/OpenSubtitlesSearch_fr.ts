@@ -16,7 +16,7 @@ p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://sourceforge.net/projects/ossearch/&quot;&gt;&lt;img src=&quot;:/opensubtitles&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://www.opensubtitles.org/&quot;&gt;&lt;img src=&quot;:/ico/opensubico.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Version&lt;/span&gt; : 0.5&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Version&lt;/span&gt; : 0.7&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Author&lt;/span&gt; : parcouss&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The following librarys are used :&lt;/p&gt;
@@ -26,6 +26,38 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Thanks to all;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://sourceforge.net/projects/ossearch/&quot;&gt;&lt;img src=&quot;:/opensubtitles&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://www.opensubtitles.org/&quot;&gt;&lt;img src=&quot;:/ico/opensubico.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Version&lt;/span&gt; : 0.7&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Auteur&lt;/span&gt; : parcouss&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Les librairies suivantes sont utilisées :&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://qt.nokia.com/products/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Qt&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;http://www.zlib.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;zlib&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;http://site.icu-project.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;ICU&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;http://wiedi.frubar.net/blog/2008/03/08/libmaia-xml-rpc-with-qt4/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;libmaia&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Et le serveur xml-rpc est maintenu par &lt;a href=&quot;http://www.opensubtitles.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Opensubtitles&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Merci à tous;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://sourceforge.net/projects/ossearch/&quot;&gt;&lt;img src=&quot;:/opensubtitles&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://www.opensubtitles.org/&quot;&gt;&lt;img src=&quot;:/ico/opensubico.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Version&lt;/span&gt; : 0.5&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Author&lt;/span&gt; : parcouss&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The following librarys are used :&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://qt.nokia.com/products/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Qt&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;http://www.zlib.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;zlib&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;http://site.icu-project.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;ICU&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;http://wiedi.frubar.net/blog/2008/03/08/libmaia-xml-rpc-with-qt4/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;libmaia&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;And the xml-rpc server is owned by &lt;a href=&quot;http://www.opensubtitles.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Opensubtitles&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Thanks to all;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="obsolete">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
@@ -60,18 +92,18 @@ p, li { white-space: pre-wrap; }
         <translation>Noter ce sous titre mauvais</translation>
     </message>
     <message>
-        <location filename="../src/addcommentdialog.cpp" line="41"/>
+        <location filename="../src/addcommentdialog.cpp" line="56"/>
         <source>Are you sure you want to submit this comment for the subtitle %1 ?</source>
         <translation>Etes vous sûr de vouloir envoyer ce commentaire pour le sous titre %1 ?</translation>
     </message>
     <message>
-        <location filename="../src/addcommentdialog.cpp" line="43"/>
+        <location filename="../src/addcommentdialog.cpp" line="58"/>
         <source>
  It will be marked as bad.</source>
         <translation>Il sera noté mauvais.</translation>
     </message>
     <message>
-        <location filename="../src/addcommentdialog.cpp" line="44"/>
+        <location filename="../src/addcommentdialog.cpp" line="59"/>
         <source>Send subtitle comment</source>
         <translation>Envoyer le commentaire</translation>
     </message>
@@ -133,27 +165,27 @@ Otherwise, it will be downloaded in %1.</source>
 Sinon ce sera téléchargé dans le dossier %1.</translation>
     </message>
     <message>
-        <location filename="../src/gestionconnexion.cpp" line="184"/>
+        <location filename="../src/gestionconnexion.cpp" line="185"/>
         <source>[Conversion error] Unable to convert subtitle %1 to %2</source>
         <translation>[Erreur de conversion] Impossible de contenir le sous titre %1 en %2</translation>
     </message>
     <message>
-        <location filename="../src/gestionconnexion.cpp" line="197"/>
+        <location filename="../src/gestionconnexion.cpp" line="198"/>
         <source>[Save error] Unable to save the subtitle file %1</source>
         <translation>[Erreur de sauvegarde] Impossible d&apos;enregistrer le fichier %1</translation>
     </message>
     <message>
-        <location filename="../src/gestionconnexion.cpp" line="201"/>
+        <location filename="../src/gestionconnexion.cpp" line="202"/>
         <source>Downloaderror</source>
         <translation>Erreur de téléchargement</translation>
     </message>
     <message>
-        <location filename="../src/gestionconnexion.cpp" line="206"/>
+        <location filename="../src/gestionconnexion.cpp" line="207"/>
         <source>Authorization error</source>
         <translation>Erreur d&apos;authentification</translation>
     </message>
     <message>
-        <location filename="../src/gestionconnexion.cpp" line="206"/>
+        <location filename="../src/gestionconnexion.cpp" line="207"/>
         <source>You have to be logged to OpenSubtitles server with an account(login / pass).
 Please register on http://www.opensubtitles.org then fill your credentials in the properties dialog.</source>
         <translation>Il faut être identifié avec un couple (login / passwd) provenant d&apos;OpenSubtitles.
@@ -164,12 +196,12 @@ Merci de vous enregistrer sur http://www.opensubtitles.org puis de remplir les i
         <translation type="obsolete">Il faut être identifié avec un couple (login / passwd) provenant d&apos;OpenSubtitles.</translation>
     </message>
     <message>
-        <location filename="../src/gestionconnexion.cpp" line="212"/>
+        <location filename="../src/gestionconnexion.cpp" line="213"/>
         <source>Comment sended</source>
         <translation>Commentaire envoyé</translation>
     </message>
     <message>
-        <location filename="../src/gestionconnexion.cpp" line="212"/>
+        <location filename="../src/gestionconnexion.cpp" line="213"/>
         <source>The comment has been send and will be available in a few for other users.</source>
         <translation>Le commentaire a été envoyé et sera accessible d&apos;ici peu aux autres utilisateurs.</translation>
     </message>
@@ -228,7 +260,7 @@ Merci de vous enregistrer sur http://www.opensubtitles.org puis de remplir les i
     </message>
     <message>
         <location filename="../ui/mainwindow.ui" line="231"/>
-        <location filename="../src/mainwindow.cpp" line="190"/>
+        <location filename="../src/mainwindow.cpp" line="191"/>
         <source>Quit</source>
         <translation>Quitter</translation>
     </message>
@@ -331,60 +363,60 @@ Merci de vous enregistrer sur http://www.opensubtitles.org puis de remplir les i
         <translation>Commenter un sous titre</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="47"/>
+        <location filename="../src/mainwindow.cpp" line="46"/>
         <source>Views</source>
         <translation>Vues</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="130"/>
-        <location filename="../src/mainwindow.cpp" line="284"/>
+        <location filename="../src/mainwindow.cpp" line="131"/>
+        <location filename="../src/mainwindow.cpp" line="286"/>
         <source>Looking for subtitles</source>
         <translation>Recherche de sous titre</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="139"/>
+        <location filename="../src/mainwindow.cpp" line="140"/>
         <source>Sutitles loaded.</source>
         <translation>Liste de sous titres reçue.</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="149"/>
+        <location filename="../src/mainwindow.cpp" line="150"/>
         <source> - connected</source>
         <translation> - connecté</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="165"/>
+        <location filename="../src/mainwindow.cpp" line="166"/>
         <source>Nothing to download.</source>
         <translation>Rien à télécharger.</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="169"/>
+        <location filename="../src/mainwindow.cpp" line="170"/>
         <source>Downloading subtitles</source>
         <translation>Téléchargement de sous titres</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="191"/>
+        <location filename="../src/mainwindow.cpp" line="192"/>
         <source>The application is not diconnected from server.
 Diconnect anyway ?</source>
         <translation>L&apos;application n&apos;est pas déconnectée du serveur.
 Quitter tout de même ?</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="232"/>
+        <location filename="../src/mainwindow.cpp" line="233"/>
         <source>Unable to associate the selected subtitles</source>
         <translation>Impossible d&apos;associer la sélection de sous titres</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="258"/>
+        <location filename="../src/mainwindow.cpp" line="259"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="258"/>
+        <location filename="../src/mainwindow.cpp" line="259"/>
         <source>The application is not connected to opensubtitles server.</source>
         <translation>L&apos;application n&apos;est pas connectée au serveur d&apos;opensubtitles.</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="295"/>
+        <location filename="../src/mainwindow.cpp" line="298"/>
         <source>Sending comment for subtitle </source>
         <translation>Envoi de commentaire pour le sous titre</translation>
     </message>
@@ -405,7 +437,7 @@ Quitter tout de même ?</translation>
 <context>
     <name>OpenSubtitlesRPCClient</name>
     <message>
-        <location filename="../src/client/OpenSubtitlesRPCClient.cpp" line="55"/>
+        <location filename="../src/client/OpenSubtitlesRPCClient.cpp" line="54"/>
         <source>Error %1 while ungzipping %2.</source>
         <translation>Erreur %1 durant la décompression de %2.</translation>
     </message>
@@ -489,7 +521,7 @@ Quitter tout de même ?</translation>
     <message>
         <location filename="../ui/propertiesdialog.ui" line="181"/>
         <source>In Hash and Mixed mode, download near movie file</source>
-        <translation>En mode Hash ou Mixe, téécharger à côté du fichier vidéo</translation>
+        <translation>En mode Hash ou Mixe, télécharger à côté du fichier vidéo</translation>
     </message>
     <message>
         <location filename="../ui/propertiesdialog.ui" line="188"/>
@@ -530,7 +562,7 @@ Quitter tout de même ?</translation>
     <message>
         <location filename="../ui/propertiesdialog.ui" line="312"/>
         <source>Detail view content:</source>
-        <translation>Contenu de la vu détail:</translation>
+        <translation>Contenu de la vue détail:</translation>
     </message>
     <message>
         <location filename="../ui/propertiesdialog.ui" line="322"/>
@@ -566,6 +598,239 @@ Quitter tout de même ?</translation>
         <location filename="../src/propertiesdialog.cpp" line="49"/>
         <source>Encoding :</source>
         <translation>Encodage :</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="12"/>
+        <source>Albanian</source>
+        <translation>Albanais</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="13"/>
+        <source>Arabic</source>
+        <translation>Arabe</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="14"/>
+        <source>Basque</source>
+        <translation>Basque</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="15"/>
+        <source>Bulgarian</source>
+        <translation>Bulgare</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="16"/>
+        <source>Catalan</source>
+        <translation>Catalan</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="17"/>
+        <source>Chinese</source>
+        <translation>Chinois</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="18"/>
+        <source>Czech</source>
+        <translation>Tchèque</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="19"/>
+        <source>Danish</source>
+        <translation>Danois</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="20"/>
+        <source>Dutch</source>
+        <translation>Néerlandais</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="21"/>
+        <source>English</source>
+        <translation>Anglais</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="22"/>
+        <source>Estonian</source>
+        <translation>Estonien</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="23"/>
+        <source>Finnish</source>
+        <translation>Finlandais</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="24"/>
+        <source>French</source>
+        <translation>Français</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="25"/>
+        <source>Georgian</source>
+        <translation>Géorgien</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="26"/>
+        <source>German</source>
+        <translation>Allemand</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="27"/>
+        <source>Galician</source>
+        <translation>Gaélic</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="28"/>
+        <source>Greek</source>
+        <translation>Grec</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="29"/>
+        <source>Hebrew</source>
+        <translation>Hébreu</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="30"/>
+        <source>Croatian</source>
+        <translation>Croate</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="31"/>
+        <source>Hungarian</source>
+        <translation>Hongrois</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="32"/>
+        <source>Icelandic</source>
+        <translation>Islandais</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="33"/>
+        <source>Indonesian</source>
+        <translation>Indonésien</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="34"/>
+        <source>Italian</source>
+        <translation>Italien</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="35"/>
+        <source>Japanese</source>
+        <translation>Japonais</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="36"/>
+        <source>Korean</source>
+        <translation>Koréen</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="37"/>
+        <source>Macedonian</source>
+        <translation>Macédonien</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="38"/>
+        <source>Malay</source>
+        <translation>Malais</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="39"/>
+        <source>Norwegian</source>
+        <translation>Norvégien</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="40"/>
+        <source>Occitan</source>
+        <translation>Occitan</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="41"/>
+        <source>Persian</source>
+        <translation>Perse</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="42"/>
+        <source>Polish</source>
+        <translation>Polonais</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="43"/>
+        <source>Portuguese</source>
+        <translation>Portugais</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="44"/>
+        <source>Russian</source>
+        <translation>Russe</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="45"/>
+        <source>Serbian</source>
+        <translation>Serbe</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="46"/>
+        <source>Sinhalese</source>
+        <translation>Cinghalais</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="47"/>
+        <source>Slovak</source>
+        <translation>Slovaque</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="48"/>
+        <source>Slovenian</source>
+        <translation>Slovène</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="49"/>
+        <source>Spanish</source>
+        <translation>Espagnol</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="50"/>
+        <source>Swedish</source>
+        <translation>Suédois</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="51"/>
+        <source>Tagalog</source>
+        <translation>Tagalog</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="52"/>
+        <source>Thai</source>
+        <translation>Thaïlandais</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="53"/>
+        <source>Turkish</source>
+        <translation>Turc</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="54"/>
+        <source>Ukrainian</source>
+        <translation>Ukrainien</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="55"/>
+        <source>Vietnamese</source>
+        <translation>Vietnamien</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="56"/>
+        <source>Romanian</source>
+        <translation>Roumain</translation>
+    </message>
+    <message>
+        <location filename="../src/generated/oss_langs.cpp" line="57"/>
+        <source>Brazilian</source>
+        <translation>Brésilien</translation>
     </message>
 </context>
 <context>
@@ -674,62 +939,54 @@ p, li { white-space: pre-wrap; }
         <translation>Méthode de recherche : </translation>
     </message>
     <message>
-        <location filename="../ui/searchdialog.ui" line="58"/>
+        <location filename="../ui/searchdialog.ui" line="67"/>
         <source>Langs : (no selection means all langs)</source>
         <translation>Langues : (aucune sélection signifie toutes les langues disponibles)</translation>
     </message>
     <message>
-        <location filename="../ui/searchdialog.ui" line="74"/>
         <source>french</source>
-        <translation>français</translation>
+        <translation type="obsolete">français</translation>
     </message>
     <message>
-        <location filename="../ui/searchdialog.ui" line="77"/>
         <source>fre</source>
-        <translation>fra</translation>
+        <translation type="obsolete">fra</translation>
     </message>
     <message>
-        <location filename="../ui/searchdialog.ui" line="84"/>
         <source>english</source>
-        <translation>anglais</translation>
+        <translation type="obsolete">anglais</translation>
     </message>
     <message>
-        <location filename="../ui/searchdialog.ui" line="87"/>
         <source>eng</source>
-        <translation>ang</translation>
+        <translation type="obsolete">ang</translation>
     </message>
     <message>
-        <location filename="../ui/searchdialog.ui" line="94"/>
         <source>spanish</source>
-        <translation>espagnol</translation>
+        <translation type="obsolete">espagnol</translation>
     </message>
     <message>
-        <location filename="../ui/searchdialog.ui" line="97"/>
         <source>spa</source>
-        <translation>esp</translation>
+        <translation type="obsolete">esp</translation>
     </message>
     <message>
-        <location filename="../ui/searchdialog.ui" line="104"/>
         <source>german</source>
-        <translation>allemand</translation>
+        <translation type="obsolete">allemand</translation>
     </message>
     <message>
-        <location filename="../ui/searchdialog.ui" line="107"/>
         <source>ger</source>
-        <translation>all</translation>
+        <translation type="obsolete">all</translation>
     </message>
     <message>
-        <location filename="../src/searchdialog.cpp" line="11"/>
+        <location filename="../src/searchdialog.cpp" line="13"/>
         <source>Hash</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../src/searchdialog.cpp" line="12"/>
+        <location filename="../src/searchdialog.cpp" line="14"/>
         <source>Text</source>
         <translation>Texte</translation>
     </message>
     <message>
-        <location filename="../src/searchdialog.cpp" line="13"/>
+        <location filename="../src/searchdialog.cpp" line="15"/>
         <source>Mixed</source>
         <translation>Mixte</translation>
     </message>
@@ -737,7 +994,7 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>Settings</name>
     <message>
-        <location filename="../src/settings.cpp" line="54"/>
+        <location filename="../src/settings.cpp" line="55"/>
         <source>Subtitle: &lt;b&gt;$SubFileName&lt;/b&gt; ($IDSubtitle)&lt;br&gt;Lang: &lt;b&gt;$LanguageName&lt;/b&gt;&lt;br&gt;Format : &lt;b&gt;$SubFormat&lt;/b&gt; (cd $SubActualCD/$SubSumCD)&lt;br&gt;Note : &lt;b&gt;$SubRating&lt;/b&gt; (bad: &lt;b&gt;$SubBad&lt;/b&gt; times)</source>
         <translation>Sous titre: &lt;b&gt;$SubFileName&lt;/b&gt; ($IDSubtitle)&lt;br&gt;Langue: &lt;b&gt;$LanguageName&lt;/b&gt;&lt;br&gt;Format : &lt;b&gt;$SubFormat&lt;/b&gt; (cd $SubActualCD/$SubSumCD)&lt;br&gt;Note : &lt;b&gt;$SubRating&lt;/b&gt; (noté mauvais: &lt;b&gt;$SubBad&lt;/b&gt; fois)</translation>
     </message>
@@ -745,37 +1002,37 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>SubtitleDetail</name>
     <message>
-        <location filename="../src/subtitledetail.cpp" line="33"/>
+        <location filename="../src/subtitledetail.cpp" line="32"/>
         <source>Enable line wrapping</source>
         <translation>Aller à la ligne</translation>
     </message>
     <message>
-        <location filename="../src/subtitledetail.cpp" line="84"/>
+        <location filename="../src/subtitledetail.cpp" line="83"/>
         <source>Downloading subtitles comments</source>
         <translation>Téléchargement de commentaires</translation>
     </message>
     <message>
-        <location filename="../src/subtitledetail.cpp" line="99"/>
+        <location filename="../src/subtitledetail.cpp" line="98"/>
         <source>Comments loaded.</source>
         <translation>Commentaires chargés.</translation>
     </message>
     <message>
-        <location filename="../src/subtitledetail.cpp" line="149"/>
+        <location filename="../src/subtitledetail.cpp" line="148"/>
         <source>No comments.</source>
         <translation>Aucun commentaire.</translation>
     </message>
     <message>
-        <location filename="../src/subtitledetail.cpp" line="152"/>
+        <location filename="../src/subtitledetail.cpp" line="151"/>
         <source>Comments downloading...</source>
         <translation>Téléchargement de commentaires...</translation>
     </message>
     <message>
-        <location filename="../src/subtitledetail.cpp" line="155"/>
+        <location filename="../src/subtitledetail.cpp" line="154"/>
         <source>Comments downloading aborted.</source>
         <translation>Téléchargement de commentaire annulé.</translation>
     </message>
     <message>
-        <location filename="../src/subtitledetail.cpp" line="170"/>
+        <location filename="../src/subtitledetail.cpp" line="169"/>
         <source>On &lt;b&gt;%1&lt;/b&gt;, &lt;b&gt;%2&lt;/b&gt; wrote:&lt;br&gt;%3&lt;br&gt;&lt;br&gt;</source>
         <translation>Le &lt;b&gt;%1&lt;/b&gt;, &lt;b&gt;%2&lt;/b&gt; a écrit:&lt;br&gt;%3&lt;br&gt;&lt;br&gt;</translation>
     </message>
@@ -783,52 +1040,52 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>UpdateMovieHashDialog</name>
     <message>
-        <location filename="../src/updatemoviehashdialog.cpp" line="45"/>
+        <location filename="../src/updatemoviehashdialog.cpp" line="59"/>
         <source>Selection must not contains different movie&apos;s name.</source>
         <translation>La sélection ne doit pas contenir de nom de films différents.</translation>
     </message>
     <message>
-        <location filename="../src/updatemoviehashdialog.cpp" line="50"/>
+        <location filename="../src/updatemoviehashdialog.cpp" line="64"/>
         <source>Incomplete selection. CD %1 is missing.</source>
         <translation>Sélection incomplète. CD %1 mnquant.</translation>
     </message>
     <message>
-        <location filename="../src/updatemoviehashdialog.cpp" line="55"/>
+        <location filename="../src/updatemoviehashdialog.cpp" line="69"/>
         <source>The number of cds is inconsistent.</source>
         <translation>Le nombre de cd est incorrect.</translation>
     </message>
     <message>
-        <location filename="../src/updatemoviehashdialog.cpp" line="76"/>
+        <location filename="../src/updatemoviehashdialog.cpp" line="90"/>
         <source>Associate movies with subtitles ?</source>
         <translation>Associer les fichiers vidéos aux sous-titres ?</translation>
     </message>
     <message>
-        <location filename="../src/updatemoviehashdialog.cpp" line="85"/>
+        <location filename="../src/updatemoviehashdialog.cpp" line="99"/>
         <source>Asking association movies hash / subtitles</source>
         <translation>Demande d&apos;association hash / sous titre</translation>
     </message>
     <message>
-        <location filename="../src/updatemoviehashdialog.cpp" line="92"/>
+        <location filename="../src/updatemoviehashdialog.cpp" line="106"/>
         <source>Association movies hash / subtitles OK. It will be visible to any user within 24h.</source>
         <translation>Association hash / sous titres OK. Ce sera visible aux autre utilisateurs sous 24h.</translation>
     </message>
     <message>
-        <location filename="../src/updatemoviehashdialog.cpp" line="93"/>
+        <location filename="../src/updatemoviehashdialog.cpp" line="107"/>
         <source>Association movies hash / subtitles was existing. No update.</source>
         <translation>L&apos;association hash / sous titre existait. Pas de mise à jour.</translation>
     </message>
     <message>
-        <location filename="../src/updatemoviehashdialog.cpp" line="95"/>
+        <location filename="../src/updatemoviehashdialog.cpp" line="109"/>
         <source>Movie name has been updated.</source>
         <translation>Le nom du film a été mis à jour.</translation>
     </message>
     <message>
-        <location filename="../src/updatemoviehashdialog.cpp" line="105"/>
+        <location filename="../src/updatemoviehashdialog.cpp" line="119"/>
         <source>Transaction error.</source>
         <translation>Erreur de transaction.</translation>
     </message>
     <message>
-        <location filename="../src/updatemoviehashdialog.cpp" line="128"/>
+        <location filename="../src/updatemoviehashdialog.cpp" line="142"/>
         <source>Work in progress...
 Stop it ?</source>
         <translation>Envoi en cours...

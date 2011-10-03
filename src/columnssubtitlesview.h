@@ -31,6 +31,7 @@ public:
 
 protected:
     void contextMenuEvent ( QContextMenuEvent * e );
+    void dropEvent(QDropEvent *event);
 
 private:
     QMenu * m_ctxMenu;
