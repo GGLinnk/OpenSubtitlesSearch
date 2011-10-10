@@ -7,6 +7,7 @@ DEFINES += USE_ICU
 contains(DEFINES, USE_ICU):include(src/icu/icu.pri)
 TARGET = OpenSubtitlesSearch
 TEMPLATE = app
+win32:RC_FILE = ossearch.rc
 INCLUDEPATH += src
 SOURCES += src/main.cpp \
     src/mainwindow.cpp \
