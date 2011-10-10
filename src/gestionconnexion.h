@@ -74,6 +74,9 @@ public slots:
     void subtitlesDownloaded(const QHash<QString, QByteArray> & liste);
     void commentSended();
 
+signals:
+    void subtitleSavedOnDisk(const QString & subId, const QString & fname, const QString & movieName);
+
 private slots:
     void connected();
     void disconnected();

@@ -14,7 +14,13 @@
 */
 
 #include "networkreplydownloadview.h"
+#include "networkreplydownloadtablemodel.h"
 #include <QResizeEvent>
+#include <QMenu>
+#include <QDesktopServices>
+#include <QUrl>
+#include <QFileInfo>
+#include <QDir>
 
 NetworkReplyDownloadView::NetworkReplyDownloadView(QWidget *parent) :
     QTableView(parent)
@@ -26,4 +32,42 @@ void NetworkReplyDownloadView::resizeEvent(QResizeEvent *event) {
     int row1 = event->size().width() - 30;
     setColumnWidth(0, row1);
     setColumnWidth(1, 30);
+}
+
+void NetworkReplyDownloadView::contextMenuEvent(QContextMenuEvent *e) {
+    QModelIndex index = indexAt(viewport()->mapFromGlobal(e->globalPos()));
+    if (! index.isValid()) return;
+    selectionModel()->setCurrentIndex(index, QItemSelectionModel::ClearAndSelect);
+    NetworkReplyDownloadTableModel * m = (NetworkReplyDownloadTableModel *) model();
+    const NetworkReplyElem & elem = m->networkReplyElem(index.row());
+    if (elem.state != FINISHED) return;
+    QMenu * menu = new QMenu(this);
+    QAction * action = new QAction(trUtf8("Open subtitle folder"), this);
+    connect(action, SIGNAL(triggered()), this, SLOT(openSubtitleFolderUrl()));
+    menu->addAction(action);
+    action = new QAction(trUtf8("Open subtitle file"), this);
+    connect(action, SIGNAL(triggered()), this, SLOT(openSubtitleUrl()));
+    menu->addAction(action);
+    menu->exec(e->globalPos());
+    delete menu;
+}
+
+void NetworkReplyDownloadView::openSubtitleUrl() {
+    QModelIndexList lst = selectionModel()->selectedIndexes();
+    if (lst.isEmpty()) return;
+    NetworkReplyDownloadTableModel * m = (NetworkReplyDownloadTableModel *) model();
+    const NetworkReplyElem & elem = m->networkReplyElem(lst.first().row());
+    Q_ASSERT(elem.state == FINISHED);
+    QStringList stlst = elem.text.split("\t\t");
+    QDesktopServices::openUrl(QUrl::fromLocalFile(stlst.at(1)));
+}
+
+void NetworkReplyDownloadView::openSubtitleFolderUrl() {
+    QModelIndexList lst = selectionModel()->selectedIndexes();
+    if (lst.isEmpty()) return;
+    NetworkReplyDownloadTableModel * m = (NetworkReplyDownloadTableModel *) model();
+    const NetworkReplyElem & elem = m->networkReplyElem(lst.first().row());
+    Q_ASSERT(elem.state == FINISHED);
+    QStringList stlst = elem.text.split("\t\t");
+    QDesktopServices::openUrl(QUrl::fromLocalFile(QFileInfo(stlst.at(1)).dir().path()));
 }

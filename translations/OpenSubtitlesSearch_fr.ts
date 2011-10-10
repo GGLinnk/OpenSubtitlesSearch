@@ -170,22 +170,22 @@ Sinon ce sera téléchargé dans le dossier %1.</translation>
         <translation>[Erreur de conversion] Impossible de contenir le sous titre %1 en %2</translation>
     </message>
     <message>
-        <location filename="../src/gestionconnexion.cpp" line="198"/>
+        <location filename="../src/gestionconnexion.cpp" line="199"/>
         <source>[Save error] Unable to save the subtitle file %1</source>
         <translation>[Erreur de sauvegarde] Impossible d&apos;enregistrer le fichier %1</translation>
     </message>
     <message>
-        <location filename="../src/gestionconnexion.cpp" line="202"/>
+        <location filename="../src/gestionconnexion.cpp" line="203"/>
         <source>Downloaderror</source>
         <translation>Erreur de téléchargement</translation>
     </message>
     <message>
-        <location filename="../src/gestionconnexion.cpp" line="207"/>
+        <location filename="../src/gestionconnexion.cpp" line="208"/>
         <source>Authorization error</source>
         <translation>Erreur d&apos;authentification</translation>
     </message>
     <message>
-        <location filename="../src/gestionconnexion.cpp" line="207"/>
+        <location filename="../src/gestionconnexion.cpp" line="208"/>
         <source>You have to be logged to OpenSubtitles server with an account(login / pass).
 Please register on http://www.opensubtitles.org then fill your credentials in the properties dialog.</source>
         <translation>Il faut être identifié avec un couple (login / passwd) provenant d&apos;OpenSubtitles.
@@ -196,12 +196,12 @@ Merci de vous enregistrer sur http://www.opensubtitles.org puis de remplir les i
         <translation type="obsolete">Il faut être identifié avec un couple (login / passwd) provenant d&apos;OpenSubtitles.</translation>
     </message>
     <message>
-        <location filename="../src/gestionconnexion.cpp" line="213"/>
+        <location filename="../src/gestionconnexion.cpp" line="214"/>
         <source>Comment sended</source>
         <translation>Commentaire envoyé</translation>
     </message>
     <message>
-        <location filename="../src/gestionconnexion.cpp" line="213"/>
+        <location filename="../src/gestionconnexion.cpp" line="214"/>
         <source>The comment has been send and will be available in a few for other users.</source>
         <translation>Le commentaire a été envoyé et sera accessible d&apos;ici peu aux autres utilisateurs.</translation>
     </message>
@@ -260,7 +260,7 @@ Merci de vous enregistrer sur http://www.opensubtitles.org puis de remplir les i
     </message>
     <message>
         <location filename="../ui/mainwindow.ui" line="231"/>
-        <location filename="../src/mainwindow.cpp" line="191"/>
+        <location filename="../src/mainwindow.cpp" line="193"/>
         <source>Quit</source>
         <translation>Quitter</translation>
     </message>
@@ -368,55 +368,55 @@ Merci de vous enregistrer sur http://www.opensubtitles.org puis de remplir les i
         <translation>Vues</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="131"/>
-        <location filename="../src/mainwindow.cpp" line="286"/>
+        <location filename="../src/mainwindow.cpp" line="133"/>
+        <location filename="../src/mainwindow.cpp" line="288"/>
         <source>Looking for subtitles</source>
         <translation>Recherche de sous titre</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="140"/>
+        <location filename="../src/mainwindow.cpp" line="142"/>
         <source>Sutitles loaded.</source>
         <translation>Liste de sous titres reçue.</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="150"/>
+        <location filename="../src/mainwindow.cpp" line="152"/>
         <source> - connected</source>
         <translation> - connecté</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="166"/>
+        <location filename="../src/mainwindow.cpp" line="168"/>
         <source>Nothing to download.</source>
         <translation>Rien à télécharger.</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="170"/>
+        <location filename="../src/mainwindow.cpp" line="172"/>
         <source>Downloading subtitles</source>
         <translation>Téléchargement de sous titres</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="192"/>
+        <location filename="../src/mainwindow.cpp" line="194"/>
         <source>The application is not diconnected from server.
 Diconnect anyway ?</source>
         <translation>L&apos;application n&apos;est pas déconnectée du serveur.
 Quitter tout de même ?</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="233"/>
+        <location filename="../src/mainwindow.cpp" line="235"/>
         <source>Unable to associate the selected subtitles</source>
         <translation>Impossible d&apos;associer la sélection de sous titres</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="259"/>
+        <location filename="../src/mainwindow.cpp" line="261"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="259"/>
+        <location filename="../src/mainwindow.cpp" line="261"/>
         <source>The application is not connected to opensubtitles server.</source>
         <translation>L&apos;application n&apos;est pas connectée au serveur d&apos;opensubtitles.</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="298"/>
+        <location filename="../src/mainwindow.cpp" line="300"/>
         <source>Sending comment for subtitle </source>
         <translation>Envoi de commentaire pour le sous titre</translation>
     </message>
@@ -424,14 +424,32 @@ Quitter tout de même ?</translation>
 <context>
     <name>NetworkReplyDownloadDelegate</name>
     <message>
-        <location filename="../src/networkreplydownloaddelegate.cpp" line="32"/>
+        <location filename="../src/networkreplydownloaddelegate.cpp" line="37"/>
+        <source>Subtitle %1 (%2) downloaded.</source>
+        <translation>Sous titre %1 (%2) téléchargé.</translation>
+    </message>
+    <message>
+        <location filename="../src/networkreplydownloaddelegate.cpp" line="40"/>
         <source>Waiting server ...</source>
         <translation>Attente du serveur ...</translation>
     </message>
     <message>
-        <location filename="../src/networkreplydownloaddelegate.cpp" line="45"/>
+        <location filename="../src/networkreplydownloaddelegate.cpp" line="53"/>
         <source>Downloading - %1</source>
         <translation>Téléchargement - %1</translation>
+    </message>
+</context>
+<context>
+    <name>NetworkReplyDownloadView</name>
+    <message>
+        <location filename="../src/networkreplydownloadview.cpp" line="45"/>
+        <source>Open subtitle folder</source>
+        <translation>Ouvrir le dossier contenant le sous titre</translation>
+    </message>
+    <message>
+        <location filename="../src/networkreplydownloadview.cpp" line="48"/>
+        <source>Open subtitle file</source>
+        <translation>Ouvrir le fichier de sous titre</translation>
     </message>
 </context>
 <context>
@@ -549,43 +567,43 @@ Quitter tout de même ?</translation>
         <translation>Colonnes visibles :</translation>
     </message>
     <message>
-        <location filename="../ui/propertiesdialog.ui" line="282"/>
-        <location filename="../ui/propertiesdialog.ui" line="295"/>
+        <location filename="../ui/propertiesdialog.ui" line="291"/>
+        <location filename="../ui/propertiesdialog.ui" line="304"/>
         <source>...</source>
         <translation>...</translation>
     </message>
     <message>
-        <location filename="../ui/propertiesdialog.ui" line="306"/>
+        <location filename="../ui/propertiesdialog.ui" line="315"/>
         <source>Detail view</source>
         <translation>Vue détail</translation>
     </message>
     <message>
-        <location filename="../ui/propertiesdialog.ui" line="312"/>
+        <location filename="../ui/propertiesdialog.ui" line="321"/>
         <source>Detail view content:</source>
         <translation>Contenu de la vue détail:</translation>
     </message>
     <message>
-        <location filename="../ui/propertiesdialog.ui" line="322"/>
+        <location filename="../ui/propertiesdialog.ui" line="331"/>
         <source>Download comment automatically</source>
         <translation>Télécharger automatiquement les commentaires</translation>
     </message>
     <message>
-        <location filename="../ui/propertiesdialog.ui" line="347"/>
+        <location filename="../ui/propertiesdialog.ui" line="356"/>
         <source>Move up</source>
         <translation>Déplacer vers le haut</translation>
     </message>
     <message>
-        <location filename="../ui/propertiesdialog.ui" line="350"/>
+        <location filename="../ui/propertiesdialog.ui" line="359"/>
         <source>Move the row up</source>
         <translation>Déplacer vers le haut</translation>
     </message>
     <message>
-        <location filename="../ui/propertiesdialog.ui" line="362"/>
+        <location filename="../ui/propertiesdialog.ui" line="371"/>
         <source>Move down</source>
         <translation>Déplacer vers le bas</translation>
     </message>
     <message>
-        <location filename="../ui/propertiesdialog.ui" line="365"/>
+        <location filename="../ui/propertiesdialog.ui" line="374"/>
         <source>Move the row down</source>
         <translation>Déplacer vers le bas</translation>
     </message>

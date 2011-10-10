@@ -194,6 +194,7 @@ void GestionConnexion::subtitlesDownloaded(const QHash<QString, QByteArray> &has
         if (f.open(QIODevice::WriteOnly)) {
             f.write(subtileRealDataUncompressed);
             f.close();
+            emit subtitleSavedOnDisk(subId, fname, dataSub.value("MovieName").toString());
         } else
             errors << trUtf8("[Save error] Unable to save the subtitle file %1").arg(downloadPath.absoluteFilePath(fname));
     }

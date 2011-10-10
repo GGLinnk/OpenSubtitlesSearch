@@ -17,6 +17,7 @@
 #include "networkreplydownloadtablemodel.h"
 #include <QStyleOptionProgressBarV2>
 #include <QApplication>
+#include <QPainter>
 
 NetworkReplyDownloadDelegate::NetworkReplyDownloadDelegate(QObject *parent) :
         QStyledItemDelegate(parent), m_inconDelete(":/remove")
@@ -29,6 +30,13 @@ NetworkReplyDownloadDelegate::NetworkReplyDownloadDelegate(QObject *parent) :
 void NetworkReplyDownloadDelegate::paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const {
     const NetworkReplyElem & elem = ((NetworkReplyDownloadTableModel *)index.model())->networkReplyElem(index.row());
     if (index.column() == 0) {
+        if (elem.state == FINISHED) {
+            QStringList txt(elem.text.split("\t\t"));
+            QColor green("#00CC00");
+            painter->fillRect(option.rect, (option.state & QStyle::State_Selected) ? green.darker() : green);
+            painter->drawText(option.rect, Qt::AlignCenter, trUtf8("Subtitle %1 (%2) downloaded.").arg(txt.at(2), txt.at(0)));
+            return;
+        }
         QString attente = trUtf8("Waiting server ...");
         QStyleOptionProgressBarV2 style;
         style.rect = option.rect;

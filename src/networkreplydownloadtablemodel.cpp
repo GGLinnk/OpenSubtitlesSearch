@@ -37,10 +37,17 @@ QVariant NetworkReplyDownloadTableModel::data(const QModelIndex & index, int rol
 /**
   * @brief le role Qt::CheckStateRole permet d'annuler une requête si cela est permis
   */
-bool NetworkReplyDownloadTableModel::setData(const QModelIndex &index, const QVariant &value, int role) {
-    if (role == Qt::CheckStateRole && index.column() == 1) {
+bool NetworkReplyDownloadTableModel::setData(const QModelIndex &index, const QVariant &/*value*/, int role) {
+    if (index.isValid() && role == Qt::CheckStateRole && index.column() == 1) {
         const NetworkReplyElem & e = networkReplyElem(index.row());
         if (e.canCancel) {
+            if (e.state == FINISHED) {
+                // onsupprime la ligne
+                beginRemoveRows(QModelIndex(), index.row(), index.row());
+                m_elems.removeAt(index.row());
+                endRemoveRows();
+                return true;
+            }
             QNetworkReply * reply = e.reply;
             // abort: delete value
             reply->abort();
@@ -146,4 +153,18 @@ void NetworkReplyDownloadTableModel::deleteNextReply() {
         m_elems.removeAt(iPos);
         endRemoveRows();
     }
+}
+
+void NetworkReplyDownloadTableModel::subtitleSavedOnDisk(const QString &subId, const QString &fname, const QString & movieName) {
+    int pos = rowCount();
+    beginInsertRows(QModelIndex(),pos, pos);
+    struct NetworkReplyElem elem;
+    elem.reply = NULL;
+    elem.text = QString("%1\t\t%2\t\t%3").arg(subId, fname, movieName);
+    elem.progress = 0;
+    elem.total = -1;
+    elem.canCancel = true;
+    elem.state = FINISHED;
+    m_elems << elem;
+    endInsertRows();
 }

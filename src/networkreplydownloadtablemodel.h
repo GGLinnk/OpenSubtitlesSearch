@@ -23,7 +23,8 @@ class QNetworkReply;
 
 enum NetworkReplyElemState {
     UPLOAD,
-    DOWNLOAD
+    DOWNLOAD,
+    FINISHED
 };
 
 /**
@@ -69,6 +70,7 @@ public slots:
     void deleteNextReply();
     void up(qint64 bytesSent, qint64 bytesTotal);
     void down(qint64 bytesSent, qint64 bytesTotal);
+    void subtitleSavedOnDisk(const QString & subId, const QString & fname, const QString & movieName);
 
 private:
     NetworkReplyElem * findElem(QNetworkReply *, int & pos);

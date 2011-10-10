@@ -29,10 +29,13 @@ public:
 
 protected:
     void resizeEvent(QResizeEvent *event);
+    void contextMenuEvent ( QContextMenuEvent * e );
 
 signals:
 
 public slots:
+    void openSubtitleUrl();
+    void openSubtitleFolderUrl();
 
 };
 

@@ -71,6 +71,8 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(m_client, SIGNAL(commentSended(QNetworkReply*)), &m_gestionConnexion, SLOT(commentSended()));
     connect(m_client, SIGNAL(commentsLoaded(QMap<QString,QVariant>,QNetworkReply*)), ui->subtitleDetail, SLOT(commentsLoaded(QMap<QString,QVariant>)));
 
+    connect(&m_gestionConnexion, SIGNAL(subtitleSavedOnDisk(QString,QString,QString)), m_networkReplyModel, SLOT(subtitleSavedOnDisk(QString,QString,QString)));
+
     ui->subtitlesTableView->setContextMenu(ui->menuSous_titres);
 
     connect(ui->subtitlesTableView, SIGNAL(activated(QModelIndex)), this, SLOT(rawDownloadCurrentSubtitle()));
