@@ -29,6 +29,7 @@
 #include "updatemoviehashdialog.h"
 #include "addcommentdialog.h"
 #include "settings.h"
+#include <QNetworkProxy>
 
 MainWindow * MainWindow::_instance = NULL;
 
@@ -100,6 +101,16 @@ void MainWindow::reloadProperties(Settings *settings) {
 #ifdef USE_ICU
     m_gestionConnexion.setReencode(settings->value(Settings::SUBS_REENCODE).toString());
 #endif
+    // (re)define proxy
+    QNetworkProxy proxy;
+    if (settings->value(Settings::PROXY_USED).toBool()) {
+        proxy.setType(QNetworkProxy::HttpProxy);
+        proxy.setHostName(settings->value(Settings::PROXY_HOST).toString());
+        proxy.setPort(settings->value(Settings::PROXY_PORT).toInt());
+        proxy.setUser(settings->value(Settings::PROXY_USER).toString());
+        proxy.setPassword(settings->value(Settings::PROXY_PASSWD).toString());
+    }
+    QNetworkProxy::setApplicationProxy(proxy);
 }
 
 MainWindow::~MainWindow()

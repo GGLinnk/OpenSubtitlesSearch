@@ -34,6 +34,11 @@ const char * Settings::SHOWDOWNLOADSONCEDONE = "showDownloadsOnceDone";
 const char * Settings::SUBDETAIL_NORMAL = "subDetail/normal";
 const char * Settings::SUBDETAIL_AUTOCOMMENT = "subDetail/autoComment";
 const char * Settings::SEARCH_DIALOG_SIZE = "searchDialog/size";
+const char * Settings::PROXY_USED = "proxy/used";
+const char * Settings::PROXY_HOST = "proxy/host";
+const char * Settings::PROXY_USER = "proxy/user";
+const char * Settings::PROXY_PASSWD = "proxy/passwd";
+const char * Settings::PROXY_PORT = "proxy/port";
 
 Settings::Settings(QObject *parent) :
     QSettings("Parcouss Apps", "OpenSubtitlesSearch", parent)
@@ -63,5 +68,7 @@ QVariant Settings::defaut(const char * key) {
     if (key == SUBS_REENCODE) return "";
 #endif
     if (key == SEARCH_DIALOG_SIZE) return QSize(640, 480);
+	if (key == PROXY_USED) return false;
+	if (key == PROXY_PORT) return 80;
     return QVariant();
 }

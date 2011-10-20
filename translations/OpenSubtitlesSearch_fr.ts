@@ -260,7 +260,7 @@ Merci de vous enregistrer sur http://www.opensubtitles.org puis de remplir les i
     </message>
     <message>
         <location filename="../ui/mainwindow.ui" line="231"/>
-        <location filename="../src/mainwindow.cpp" line="193"/>
+        <location filename="../src/mainwindow.cpp" line="204"/>
         <source>Quit</source>
         <translation>Quitter</translation>
     </message>
@@ -363,60 +363,60 @@ Merci de vous enregistrer sur http://www.opensubtitles.org puis de remplir les i
         <translation>Commenter un sous titre</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="46"/>
+        <location filename="../src/mainwindow.cpp" line="47"/>
         <source>Views</source>
         <translation>Vues</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="133"/>
-        <location filename="../src/mainwindow.cpp" line="288"/>
+        <location filename="../src/mainwindow.cpp" line="144"/>
+        <location filename="../src/mainwindow.cpp" line="299"/>
         <source>Looking for subtitles</source>
         <translation>Recherche de sous titre</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="142"/>
+        <location filename="../src/mainwindow.cpp" line="153"/>
         <source>Sutitles loaded.</source>
         <translation>Liste de sous titres reçue.</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="152"/>
+        <location filename="../src/mainwindow.cpp" line="163"/>
         <source> - connected</source>
         <translation> - connecté</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="168"/>
+        <location filename="../src/mainwindow.cpp" line="179"/>
         <source>Nothing to download.</source>
         <translation>Rien à télécharger.</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="172"/>
+        <location filename="../src/mainwindow.cpp" line="183"/>
         <source>Downloading subtitles</source>
         <translation>Téléchargement de sous titres</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="194"/>
+        <location filename="../src/mainwindow.cpp" line="205"/>
         <source>The application is not diconnected from server.
 Diconnect anyway ?</source>
         <translation>L&apos;application n&apos;est pas déconnectée du serveur.
 Quitter tout de même ?</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="235"/>
+        <location filename="../src/mainwindow.cpp" line="246"/>
         <source>Unable to associate the selected subtitles</source>
         <translation>Impossible d&apos;associer la sélection de sous titres</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="261"/>
+        <location filename="../src/mainwindow.cpp" line="272"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="261"/>
+        <location filename="../src/mainwindow.cpp" line="272"/>
         <source>The application is not connected to opensubtitles server.</source>
         <translation>L&apos;application n&apos;est pas connectée au serveur d&apos;opensubtitles.</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="300"/>
+        <location filename="../src/mainwindow.cpp" line="311"/>
         <source>Sending comment for subtitle </source>
         <translation>Envoi de commentaire pour le sous titre</translation>
     </message>
@@ -518,6 +518,7 @@ Quitter tout de même ?</translation>
     </message>
     <message>
         <location filename="../ui/propertiesdialog.ui" line="104"/>
+        <location filename="../ui/propertiesdialog.ui" line="429"/>
         <source>Password :</source>
         <translation>Mot de passe :</translation>
     </message>
@@ -588,22 +589,47 @@ Quitter tout de même ?</translation>
         <translation>Télécharger automatiquement les commentaires</translation>
     </message>
     <message>
-        <location filename="../ui/propertiesdialog.ui" line="356"/>
+        <location filename="../ui/propertiesdialog.ui" line="339"/>
+        <source>Network</source>
+        <translation>Réseau</translation>
+    </message>
+    <message>
+        <location filename="../ui/propertiesdialog.ui" line="351"/>
+        <source>Use proxy</source>
+        <translation>Utiliser un proxy</translation>
+    </message>
+    <message>
+        <location filename="../ui/propertiesdialog.ui" line="372"/>
+        <source>Host :</source>
+        <translation>Hôte :</translation>
+    </message>
+    <message>
+        <location filename="../ui/propertiesdialog.ui" line="391"/>
+        <source>Port :</source>
+        <translation>Port :</translation>
+    </message>
+    <message>
+        <location filename="../ui/propertiesdialog.ui" line="410"/>
+        <source>User :</source>
+        <translation>Utilisateur :</translation>
+    </message>
+    <message>
+        <location filename="../ui/propertiesdialog.ui" line="466"/>
         <source>Move up</source>
         <translation>Déplacer vers le haut</translation>
     </message>
     <message>
-        <location filename="../ui/propertiesdialog.ui" line="359"/>
+        <location filename="../ui/propertiesdialog.ui" line="469"/>
         <source>Move the row up</source>
         <translation>Déplacer vers le haut</translation>
     </message>
     <message>
-        <location filename="../ui/propertiesdialog.ui" line="371"/>
+        <location filename="../ui/propertiesdialog.ui" line="481"/>
         <source>Move down</source>
         <translation>Déplacer vers le bas</translation>
     </message>
     <message>
-        <location filename="../ui/propertiesdialog.ui" line="374"/>
+        <location filename="../ui/propertiesdialog.ui" line="484"/>
         <source>Move the row down</source>
         <translation>Déplacer vers le bas</translation>
     </message>
@@ -1012,7 +1038,7 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>Settings</name>
     <message>
-        <location filename="../src/settings.cpp" line="55"/>
+        <location filename="../src/settings.cpp" line="60"/>
         <source>Subtitle: &lt;b&gt;$SubFileName&lt;/b&gt; ($IDSubtitle)&lt;br&gt;Lang: &lt;b&gt;$LanguageName&lt;/b&gt;&lt;br&gt;Format : &lt;b&gt;$SubFormat&lt;/b&gt; (cd $SubActualCD/$SubSumCD)&lt;br&gt;Note : &lt;b&gt;$SubRating&lt;/b&gt; (bad: &lt;b&gt;$SubBad&lt;/b&gt; times)</source>
         <translation>Sous titre: &lt;b&gt;$SubFileName&lt;/b&gt; ($IDSubtitle)&lt;br&gt;Langue: &lt;b&gt;$LanguageName&lt;/b&gt;&lt;br&gt;Format : &lt;b&gt;$SubFormat&lt;/b&gt; (cd $SubActualCD/$SubSumCD)&lt;br&gt;Note : &lt;b&gt;$SubRating&lt;/b&gt; (noté mauvais: &lt;b&gt;$SubBad&lt;/b&gt; fois)</translation>
     </message>

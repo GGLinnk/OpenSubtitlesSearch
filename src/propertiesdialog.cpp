@@ -74,6 +74,11 @@ void PropertiesDialog::load(Settings *settings) {
     m_checkChangeEncoding->setChecked(! value.isEmpty());
     m_comboChangeEncoding->setCurrentIndex(m_comboChangeEncoding->findText(value));
 #endif
+    ui->box_useProxy->setChecked(settings->value(Settings::PROXY_USED).toBool());
+    ui->lineEditHost->setText(settings->value(Settings::PROXY_HOST).toString());
+    ui->spinBoxPort->setValue(settings->value(Settings::PROXY_PORT).toInt());
+    ui->lineEditUser->setText(settings->value(Settings::PROXY_USER).toString());
+    ui->lineEditPassword->setText(settings->value(Settings::PROXY_PASSWD).toString());
 }
 
 void PropertiesDialog::save(Settings *settings) {
@@ -89,6 +94,11 @@ void PropertiesDialog::save(Settings *settings) {
 #ifdef USE_ICU
     settings->setValue(Settings::SUBS_REENCODE, m_comboChangeEncoding->isEnabled() ? m_comboChangeEncoding->currentText() : "");
 #endif
+    settings->setValue(Settings::PROXY_USED, ui->box_useProxy->isChecked());
+    settings->setValue(Settings::PROXY_HOST, ui->lineEditHost->text());
+    settings->setValue(Settings::PROXY_PORT, ui->spinBoxPort->value());
+    settings->setValue(Settings::PROXY_USER, ui->lineEditUser->text());
+    settings->setValue(Settings::PROXY_PASSWD, ui->lineEditPassword->text());
 }
 
 void PropertiesDialog::setDownloadMode(DOWNLOAD_MODE mode) {
