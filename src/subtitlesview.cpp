@@ -92,6 +92,13 @@ void SubtitlesView::openShowLink() {
     openCurentItemUrl("SubtitlesLink");
 }
 
+void SubtitlesView::openMovieLink() {
+    if (! currentIndex().isValid()) return;
+    QMap<QString, QVariant> data = subtitlesData(currentIndex());
+    QUrl url(m_movieLink.arg(data.value("IDMovieImdb").toString()));
+    QDesktopServices::openUrl(url);
+}
+
 void SubtitlesView::contextMenuEvent ( QContextMenuEvent * e ) {
     if (m_contextMenu) m_contextMenu->exec(e->globalPos());
 }

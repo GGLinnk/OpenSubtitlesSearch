@@ -111,6 +111,8 @@ void MainWindow::reloadProperties(Settings *settings) {
         proxy.setPassword(settings->value(Settings::PROXY_PASSWD).toString());
     }
     QNetworkProxy::setApplicationProxy(proxy);
+    ui->subtitleDetail->enableLineWrap(settings->value(Settings::SUBDETAIL_WRAPLINE).toBool());
+    ui->subtitlesTableView->setMovieLink(settings->value(Settings::MOVIELINK).toString());
 }
 
 MainWindow::~MainWindow()
@@ -127,6 +129,7 @@ MainWindow::~MainWindow()
     settings.setValue(Settings::SUBS_REENCODE, m_gestionConnexion.reencode());
 #endif
     settings.setValue(Settings::SEARCH_DIALOG_SIZE, m_searchDialogSize);
+    settings.setValue(Settings::SUBDETAIL_WRAPLINE, ui->subtitleDetail->isLineWrapEnabled());
     delete ui;
 }
 

@@ -33,12 +33,14 @@ const char * Settings::AUTOCONNECT = "autoconnect";
 const char * Settings::SHOWDOWNLOADSONCEDONE = "showDownloadsOnceDone";
 const char * Settings::SUBDETAIL_NORMAL = "subDetail/normal";
 const char * Settings::SUBDETAIL_AUTOCOMMENT = "subDetail/autoComment";
+const char * Settings::SUBDETAIL_WRAPLINE = "subDetail/wrapLine";
 const char * Settings::SEARCH_DIALOG_SIZE = "searchDialog/size";
 const char * Settings::PROXY_USED = "proxy/used";
 const char * Settings::PROXY_HOST = "proxy/host";
 const char * Settings::PROXY_USER = "proxy/user";
 const char * Settings::PROXY_PASSWD = "proxy/passwd";
 const char * Settings::PROXY_PORT = "proxy/port";
+const char * Settings::MOVIELINK = "movieLink";
 
 Settings::Settings(QObject *parent) :
     QSettings("Parcouss Apps", "OpenSubtitlesSearch", parent)
@@ -63,12 +65,14 @@ QVariant Settings::defaut(const char * key) {
             "Format : <b>$SubFormat</b> (cd $SubActualCD/$SubSumCD)<br>"
             "Note : <b>$SubRating</b> (bad: <b>$SubBad</b> times)"
             );
+    if (key == SUBDETAIL_WRAPLINE) return true;
     if (key == SUBDETAIL_AUTOCOMMENT) return true;
 #ifdef USE_ICU
     if (key == SUBS_REENCODE) return "";
 #endif
     if (key == SEARCH_DIALOG_SIZE) return QSize(640, 480);
-	if (key == PROXY_USED) return false;
-	if (key == PROXY_PORT) return 80;
+    if (key == PROXY_USED) return false;
+    if (key == PROXY_PORT) return 80;
+    if (key == MOVIELINK) return "http://www.imdb.com/title/tt%1/";
     return QVariant();
 }

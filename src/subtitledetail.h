@@ -41,6 +41,8 @@ public:
 
     inline void setDetailContent(const QString & detail) { m_detailContent = detail; }
     inline QString detailContent() { return m_detailContent; }
+    inline void enableLineWrap(bool lw) { m_actionSetLinedWrap->setChecked(lw); }
+    inline bool isLineWrapEnabled() { return m_actionSetLinedWrap->isChecked(); }
 
 protected:
     void contextMenuEvent(QContextMenuEvent *e);

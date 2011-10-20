@@ -32,7 +32,7 @@ SubtitleDetail::SubtitleDetail(QWidget *parent) :
     m_actionSetLinedWrap = new QAction(trUtf8("Enable line wrapping"), this);
     m_actionSetLinedWrap->setCheckable(true);
     m_actionSetLinedWrap->setChecked(false);
-    connect(m_actionSetLinedWrap, SIGNAL(triggered(bool)), this, SLOT(setLineWrap(bool)));
+    connect(m_actionSetLinedWrap, SIGNAL(toggled(bool)), this, SLOT(setLineWrap(bool)));
 }
 
 void SubtitleDetail::contextMenuEvent(QContextMenuEvent *e) {

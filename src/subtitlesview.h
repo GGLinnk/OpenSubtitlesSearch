@@ -40,11 +40,14 @@ public:
 
     inline void setContextMenu(QMenu * menu) { m_contextMenu = menu; }
 
+    inline void setMovieLink(const QString & st) { m_movieLink = st; }
+
 protected:
     void contextMenuEvent ( QContextMenuEvent * e );
     QSortFilterProxyModel * proxyModel();
     SubtitlesListModel * sourceModel();
     void openCurentItemUrl(const QString & dataKey);
+    QString m_movieLink;
 
 signals:
     void hasSelection(bool selection);
@@ -55,6 +58,7 @@ protected slots:
     void openDownloadGzLink();
     void openDownloadZipLink();
     void openShowLink();
+    void openMovieLink();
 
 private:
     bool m_hasSelection, m_hasSingleSelection;

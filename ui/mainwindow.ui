@@ -48,12 +48,6 @@
       <attribute name="verticalHeaderVisible">
        <bool>false</bool>
       </attribute>
-      <attribute name="verticalHeaderVisible">
-       <bool>false</bool>
-      </attribute>
-      <attribute name="horizontalHeaderStretchLastSection">
-       <bool>true</bool>
-      </attribute>
      </widget>
     </item>
    </layout>
@@ -64,7 +58,7 @@
      <x>0</x>
      <y>0</y>
      <width>600</width>
-     <height>27</height>
+     <height>25</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFichier">
@@ -95,6 +89,8 @@
     <addaction name="actionLien_vers_page_du_sous_titre"/>
     <addaction name="actionLien_t_l_chargement_zip"/>
     <addaction name="actionLien_t_l_chargement_gzip"/>
+    <addaction name="separator"/>
+    <addaction name="actionView_movie_on_Imdb"/>
    </widget>
    <widget class="QMenu" name="menuAide">
     <property name="title">
@@ -163,15 +159,6 @@
         <bool>true</bool>
        </attribute>
        <attribute name="verticalHeaderVisible">
-        <bool>false</bool>
-       </attribute>
-       <attribute name="verticalHeaderVisible">
-        <bool>false</bool>
-       </attribute>
-       <attribute name="horizontalHeaderStretchLastSection">
-        <bool>true</bool>
-       </attribute>
-       <attribute name="horizontalHeaderVisible">
         <bool>false</bool>
        </attribute>
       </widget>
@@ -406,6 +393,21 @@
     <bool>true</bool>
    </property>
   </action>
+  <action name="actionView_movie_on_Imdb">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resources.qrc">
+     <normaloff>:/imdb</normaloff>:/imdb</iconset>
+   </property>
+   <property name="text">
+    <string>View movie on Imdb</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>
@@ -419,6 +421,7 @@
     <slot>openDownloadGzLink()</slot>
     <slot>openDownloadZipLink()</slot>
     <slot>openShowLink()</slot>
+    <slot>openMovieLink()</slot>
    </slots>
   </customwidget>
   <customwidget>
@@ -704,6 +707,38 @@
     <hint type="sourcelabel">
      <x>159</x>
      <y>159</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionView_movie_on_Imdb</sender>
+   <signal>triggered()</signal>
+   <receiver>subtitlesTableView</receiver>
+   <slot>openMovieLink()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>159</x>
+     <y>158</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>subtitlesTableView</sender>
+   <signal>hasSingleSelection(bool)</signal>
+   <receiver>actionView_movie_on_Imdb</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>159</x>
+     <y>158</y>
     </hint>
     <hint type="destinationlabel">
      <x>-1</x>

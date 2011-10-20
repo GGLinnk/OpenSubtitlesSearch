@@ -42,12 +42,14 @@ public:
     static const char * SHOWDOWNLOADSONCEDONE;
     static const char * SUBDETAIL_NORMAL;
     static const char * SUBDETAIL_AUTOCOMMENT;
+    static const char * SUBDETAIL_WRAPLINE;
     static const char * SEARCH_DIALOG_SIZE;
     static const char * PROXY_USED;
     static const char * PROXY_HOST;
     static const char * PROXY_USER;
     static const char * PROXY_PASSWD;
     static const char * PROXY_PORT;
+    static const char * MOVIELINK;
 signals:
 
 public slots:
