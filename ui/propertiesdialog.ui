@@ -316,14 +316,14 @@
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
+        <widget class="SubtitleDetailTextEdit" name="detailContent"/>
+       </item>
+       <item>
         <widget class="QLabel" name="label_8">
          <property name="text">
           <string>Detail view content:</string>
          </property>
         </widget>
-       </item>
-       <item>
-        <widget class="SubtitleDetailTextEdit" name="detailContent"/>
        </item>
        <item>
         <widget class="QCheckBox" name="AutoDownloadComment">
@@ -502,8 +502,8 @@
   </customwidget>
   <customwidget>
    <class>SubtitleDetailTextEdit</class>
-   <extends>QPlainTextEdit</extends>
-   <header location="global">subtitledetailtextedit.h</header>
+   <extends>QTextEdit</extends>
+   <header>subtitledetailtextedit.h</header>
   </customwidget>
  </customwidgets>
  <resources>
