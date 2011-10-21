@@ -41,6 +41,7 @@ const char * Settings::PROXY_USER = "proxy/user";
 const char * Settings::PROXY_PASSWD = "proxy/passwd";
 const char * Settings::PROXY_PORT = "proxy/port";
 const char * Settings::MOVIELINK = "movieLink";
+const char * Settings::FILESYSTEMDIR = "fileSystemDir";
 
 Settings::Settings(QObject *parent) :
     QSettings("Parcouss Apps", "OpenSubtitlesSearch", parent)
@@ -74,5 +75,6 @@ QVariant Settings::defaut(const char * key) {
     if (key == PROXY_USED) return false;
     if (key == PROXY_PORT) return 80;
     if (key == MOVIELINK) return "http://www.imdb.com/title/tt%1/";
+    if (key == FILESYSTEMDIR) return QDir::homePath();
     return QVariant();
 }

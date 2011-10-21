@@ -78,10 +78,15 @@ MainWindow::MainWindow(QWidget *parent) :
 
     connect(ui->subtitlesTableView, SIGNAL(activated(QModelIndex)), this, SLOT(rawDownloadCurrentSubtitle()));
 
+    // tabify the dockWidgetFileSystem with the dockWidgetDetail (dockWidgetDetail is above)
+    // this is a initial settings as it can be modified by a call to restoreState (see just after)
+    tabifyDockWidget(ui->dockWidgetDetail, ui->dockWidgetFileSystem);
+    ui->dockWidgetDetail->raise();
 
     restoreState(settings.value(Settings::MWIN_STATE).toByteArray());
     resize(settings.value(Settings::MWIN_SIZE).toSize());
     m_searchDialogSize = settings.value(Settings::SEARCH_DIALOG_SIZE).toSize();
+    ui->fileSystemView->fsmodel()->setRootPath(settings.value(Settings::FILESYSTEMDIR).toString());
     reloadProperties(&settings);
     resizeSubtitlesList();
 

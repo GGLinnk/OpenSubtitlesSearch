@@ -50,6 +50,7 @@ public:
     static const char * PROXY_PASSWD;
     static const char * PROXY_PORT;
     static const char * MOVIELINK;
+    static const char * FILESYSTEMDIR;
 signals:
 
 public slots:
