@@ -323,7 +323,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QPlainTextEdit" name="detailContent"/>
+        <widget class="SubtitleDetailTextEdit" name="detailContent"/>
        </item>
        <item>
         <widget class="QCheckBox" name="AutoDownloadComment">
@@ -499,6 +499,11 @@
    <extends>QWidget</extends>
    <header>lineeditfilechoser.h</header>
    <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SubtitleDetailTextEdit</class>
+   <extends>QPlainTextEdit</extends>
+   <header location="global">subtitledetailtextedit.h</header>
   </customwidget>
  </customwidgets>
  <resources>
